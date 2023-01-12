@@ -1,4 +1,6 @@
 **AWESOME REACT HOOKS**
+
+A collection of awesome React hooks to speed-up your components and hooks development.
 Introducing our custom hooks package, a collection of reusable hooks for React that will help you simplify your code and make your components more manageable. Our package includes a variety of hooks that cover common functionality such as managing state, handling forms, and making API calls.
 
 Our hooks are designed to be easy to use, lightweight, and highly composable. They are built with best practices in mind and are thoroughly tested to ensure stability and reliability.

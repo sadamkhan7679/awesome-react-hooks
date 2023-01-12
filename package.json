@@ -3,7 +3,7 @@
   "private": false,
   "description": "A collection of Awesome React hooks to speed-up your components and hooks development",
   "author": "Sadam Khan <sadamhussain942@gmail.com>",
-  "homepage": "https://usehooks-ts.com",
+  "homepage": "https://awesome-react-hooks-ts.netlify.app",
   "version": "1.0.0",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
