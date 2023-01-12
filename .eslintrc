@@ -1,37 +1,13 @@
 {
-  "root": true,
-  "extends": [
-    "prettier",
-    "plugin:prettier/recommended",
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended"
-  ],
-  "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "@typescript-eslint",
-    "prettier",
-    "react",
-    "react-hooks"
-  ],
-  "rules": {
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
-    "@typescript-eslint/no-non-null-assertion": "off",
-    "@typescript-eslint/ban-ts-comment": "off",
-    "@typescript-eslint/no-explicit-any": "off"
-  },
-  "settings": {
-    "react": {
-      "version": "detect"
+  "extends": ["custom"],
+  "overrides": [
+    // Track tree-shaking potential error in the lib
+    {
+      "files": ["./src/**/!(*.test|*.spec).ts"],
+      "plugins": ["tree-shaking"],
+      "rules": {
+        "tree-shaking/no-side-effects-in-initialization": 2
+      }
     }
-  },
-  "env": {
-    "browser": true,
-    "node": true
-  },
-  "globals": {
-    "JSX": true
-  }
+  ]
 }
